@@ -1,116 +1,81 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    scroll-behavior: smooth; /* Smooth scrolling */
-}
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* Navbar */
-header {
-    background: #333;
-    padding: 1rem;
-    text-align: center;
-}
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Hello, I'm [Your Name]</h1>
+        <p>A passionate web developer and designer.</p>
+    </section>
 
-nav ul {
-    list-style: none;
-}
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a web developer with experience in HTML, CSS, and JavaScript. I love building clean and user-friendly websites.</p>
+    </section>
 
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-gallery">
+            <div class="project-card">Project 1</div>
+            <div class="project-card">Project 2</div>
+            <div class="project-card">Project 3</div>
+        </div>
+    </section>
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        </ul>
+    </section>
 
-/* Hero Section */
-#hero {
-    background-color: #007bff;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-}
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-#about, #projects, #skills, #contact {
-    padding: 50px 20px;
-    text-align: center;
-}
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-h2 {
-    margin-bottom: 20px;
-}
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
 
-/* Project Gallery */
-.project-gallery {
-    display: flex;
-    justify-content: space-around;
-}
+            <button type="submit">Send</button>
+            <p id="formMessage"></p>
+        </form>
+    </section>
 
-.project-card {
-    background-color: #f4f4f4;
-    padding: 20px;
-    width: 30%;
-    transition: transform 0.3s ease; /* Animation for project hover */
-}
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 [Your Name]. All Rights Reserved.</p>
+    </footer>
 
-.project-card:hover {
-    transform: scale(1.1); /* Scale on hover */
-}
-
-/* Skills */
-#skills ul {
-    list-style-type: none;
-}
-
-#skills li {
-    background: #007bff;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    display: inline-block;
-}
-
-/* Contact Form */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label, input, textarea {
-    width: 80%;
-    margin: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#formMessage {
-    margin-top: 15px;
-    color: red;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+</body>
+</html>
