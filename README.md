@@ -16,7 +16,7 @@ The portfolio website is designed with a clean and responsive interface. It incl
 
 ## 🚀 Live Demo
 
-[View the live website here!](https://your-github-username.github.io/your-repo-name/) <!-- Replace with your actual GitHub Pages link -->
+[View the live website here!](https://thisisalokdon.github.io/Personal-Portfolio-Website/) <!-- Replace with your actual GitHub Pages link -->
 
 ## 📂 Project Structure
 📦 Personal Portfolio  ├── 📄 index.html # Main HTML file ├── 📄 style.css # Main CSS file for styling ├── 📄 script.js # Main JavaScript file for functionality └── 📄 README.md # This file
